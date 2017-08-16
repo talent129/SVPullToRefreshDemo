@@ -1,0 +1,18 @@
+PODS:
+  - Masonry (1.0.2)
+  - MBProgressHUD (1.0.0)
+  - SVPullToRefresh (0.4.1)
+
+DEPENDENCIES:
+  - Masonry
+  - MBProgressHUD
+  - SVPullToRefresh
+
+SPEC CHECKSUMS:
+  Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
+  MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
+  SVPullToRefresh: ba2e718695a43253d8bea6852d2960097dc15d8c
+
+PODFILE CHECKSUM: 11cf2f1a93b029fd298ccee123d27a52b9633aba
+
+COCOAPODS: 1.2.1
