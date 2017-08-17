@@ -88,7 +88,7 @@ static NSInteger kPageSize = 10;//每页条数
 - (UIImageView *)myErrorImgView
 {
     if (!_myErrorImgView) {
-        _myErrorImgView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"ico_jiazaishibai"]];
+        _myErrorImgView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"s104_ico_null"]];
     }
     return _myErrorImgView;
 }
@@ -187,7 +187,7 @@ static NSInteger kPageSize = 10;//每页条数
             sself.currentIndex += 1;
             
             NSInteger dataNum = 10;
-            if (sself.loadMoreIndex == 3) {
+            if (sself.loadMoreIndex == 2) {
                 dataNum = 3;
             }
             
@@ -204,6 +204,8 @@ static NSInteger kPageSize = 10;//每页条数
             [sself.dataArray addObjectsFromArray:array];
             
             sself.tableView.dataArray = sself.dataArray;
+            
+            //reloadData执行应在隐藏上拉控件之前
             [sself.tableView reloadData];
             
             if (sself.dataArray.count == 0) {
@@ -221,6 +223,9 @@ static NSInteger kPageSize = 10;//每页条数
             if (array.count < kPageSize) {//数据不足一页时 不显示上拉控件
                 sself.tableView.showsInfiniteScrolling = NO;
             }
+            
+            //将reloadData放在这里 上拉第二次时 新加载数据小于一页数据，上面代码执行 此时: 先隐藏上拉控件 后执行reloadData
+//            [sself.tableView reloadData];
             
         }else {//error
             

@@ -154,7 +154,6 @@
 				TargetAttributes = {
 					CB105CDE1F440E6500C4588E = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = 7GSW2BF5U4;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -361,7 +360,7 @@
 			baseConfigurationReference = 3B82D312FE2F9F308AEF3FF8 /* Pods-SVPullToRefreshDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 7GSW2BF5U4;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = SVPullToRefreshDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
@@ -389,7 +388,7 @@
 			baseConfigurationReference = 1259F52292FDEC49146007D1 /* Pods-SVPullToRefreshDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 7GSW2BF5U4;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = SVPullToRefreshDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
